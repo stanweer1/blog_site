@@ -153,17 +153,28 @@
             My posting schedule can be erratic.
           </h2>
           <p>Sign up for my newsletter and you&rsquo;ll never miss a post.</p>
-          <form class="newsletter-form" id="newsletterForm" novalidate>
+          <form
+            class="newsletter-form"
+            id="newsletterForm"
+            method="post"
+            data-signup-endpoint=""
+            novalidate
+          >
             <label for="email">Email Address</label>
             <div class="form-row">
               <input id="email" name="email" type="email" required />
               <button type="submit">Sign Up</button>
             </div>
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" hidden />
+            <input type="hidden" name="_subject" value="New Cassidy Harman newsletter signup" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
             <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
           </form>
           <p class="privacy-option">
-            Prefer to stay anonymous? Follow the <a href="feed.xml">RSS feed</a>
-            instead. It does not require an email address or subscriber account.
+            This signup can be routed through an email alias so the site owner
+            does not expose a personal inbox. Readers who prefer no email can
+            still follow the <a href="feed.xml">RSS feed</a>.
           </p>
         </section>
       </main>

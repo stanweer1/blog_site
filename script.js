@@ -443,16 +443,24 @@ function setupNewsletterForm() {
   }
 
   form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
     if (!email.validity.valid) {
+      event.preventDefault();
       message.textContent = "Please enter a valid email address.";
       email.focus();
       return;
     }
 
-    message.textContent = "Thank you! You are on the list.";
-    form.reset();
+    const endpoint = form.dataset.signupEndpoint?.trim();
+
+    if (!endpoint) {
+      event.preventDefault();
+      message.textContent =
+        "Email signup is not connected yet. The RSS feed is available without any setup.";
+      return;
+    }
+
+    form.action = endpoint;
+    message.textContent = "Submitting through the alias-backed signup endpoint...";
   });
 }
 
