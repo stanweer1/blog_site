@@ -10,6 +10,7 @@ and a static newsletter form interaction.
 - `index.html` - homepage with five latest travel posts and five latest food posts
 - `pages/travel.html` - full travel archive
 - `pages/food.html` - full food archive
+- `pages/about.html` - standalone About page
 - `pictures/` - place future site images here
 - `styles.css` and `script.js` - shared static styling and interactions
 
