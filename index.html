@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="A quiet static travel blog inspired by the Cassidy Harman Squarespace fluid demo."
+      content="A graceful static travel and food journal inspired by the Cassidy Harman Squarespace demo."
     />
     <title>Cassidy Harman</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <canvas class="fluid-canvas" id="fluidCanvas" aria-hidden="true"></canvas>
-
     <div class="site-shell">
       <header class="site-header" data-reveal>
         <a class="site-title" href="#top" aria-label="Cassidy Harman home">Cassidy Harman</a>
@@ -26,235 +24,141 @@
           Menu
         </button>
         <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
-          <a href="#journal">Journal</a>
-          <a href="#about">About</a>
+          <a href="#travel">Travel</a>
+          <a href="#food">Food</a>
           <a href="#newsletter">Newsletter</a>
         </nav>
       </header>
 
       <main id="top">
         <section class="intro" aria-labelledby="intro-title" data-reveal>
-          <p class="kicker">Travel journal</p>
+          <p class="kicker">A quiet journal</p>
           <h1 id="intro-title">I plan my life out a day at a time.</h1>
           <p>
-            Notes from buses, border lines, borrowed desks, and the places that
-            make slow travel feel worth the uncertainty.
+            Notes from long roads, borrowed kitchens, border lines, and the
+            small routines that make a place feel briefly like home.
           </p>
         </section>
 
-        <section class="journal" id="journal" aria-labelledby="journal-title">
-          <div class="journal-heading" data-reveal>
+        <section class="archive-preview" id="travel" aria-labelledby="travel-title">
+          <div class="section-heading" data-reveal>
             <div>
-              <p class="kicker">Archive</p>
-              <h2 id="journal-title">Latest posts</h2>
+              <p class="kicker">Travel</p>
+              <h2 id="travel-title">Latest travel notes</h2>
             </div>
-            <label class="search-wrap" for="postSearch">
-              <span>Search</span>
-              <input
-                id="postSearch"
-                type="search"
-                placeholder="Search posts"
-                autocomplete="off"
-              />
-            </label>
+            <a class="quiet-link" href="pages/travel.html">View all travel posts</a>
           </div>
 
-          <div class="post-list" id="postList">
-            <article class="post-entry" id="post-six-ways" data-topic="guides" data-reveal>
+          <ol class="post-list compact-list">
+            <li class="post-entry" data-reveal>
               <p class="post-meta">Author Name <time datetime="2019-07-24">7/24/19</time></p>
-              <h3><a href="#post-six-ways">Six Ways to (Legally) Work Anywhere</a></h3>
+              <h3><a href="pages/travel.html#six-ways">Six Ways to (Legally) Work Anywhere</a></h3>
               <p>
-                One of the most frequent questions I get is about how I have been
-                able to pick up temporary work throughout my travels without
-                falling afoul of the law.
+                Temporary work, paperwork, and practical ways to stay on the
+                right side of local rules while moving often.
               </p>
-            </article>
-
-            <article class="post-entry" data-topic="places" data-reveal>
+            </li>
+            <li class="post-entry" data-reveal>
               <p class="post-meta">Author Name <time datetime="2019-07-21">7/21/19</time></p>
-              <h3><a href="#journal">Highlights from Mali</a></h3>
+              <h3><a href="pages/travel.html#mali">Highlights from Mali</a></h3>
               <p>
-                Frequent readers will know that Western Africa is one of my
-                favorite parts of the world, so my expectations were already
-                high when I secured a lift to Bamako.
+                A lift to Bamako, a slow arrival, and a week that made Western
+                Africa feel even more generous than expected.
               </p>
-            </article>
-
-            <article class="post-entry" data-topic="guides" data-reveal>
+            </li>
+            <li class="post-entry" data-reveal>
               <p class="post-meta">Author Name <time datetime="2019-07-10">7/10/19</time></p>
-              <h3><a href="#journal">Desert Etiquette</a></h3>
+              <h3><a href="pages/travel.html#desert-etiquette">Desert Etiquette</a></h3>
               <p>
-                Just as sailors abide by the laws of the sea, desert inhabitants
-                live by a code that keeps them safe in this often extreme
-                environment. Lesson number one: Your water is everyone&rsquo;s water.
+                The simple code that keeps desert travelers safe, starting with
+                the rule that your water is everyone&rsquo;s water.
               </p>
-            </article>
-
-            <article class="post-entry" data-topic="places" data-reveal>
+            </li>
+            <li class="post-entry" data-reveal>
               <p class="post-meta">Author Name <time datetime="2019-07-01">7/1/19</time></p>
-              <h3><a href="#journal">The Loudest City in the World</a></h3>
+              <h3><a href="pages/travel.html#cairo">The Loudest City in the World</a></h3>
               <p>
-                It is not New York or Shanghai. It is Cairo. Here are some tips
-                and tricks for enjoying the cultural life of this great city
-                without getting a headache or hearing loss.
+                A softer way to move through Cairo when the city is full of
+                life, music, engines, and impossible volume.
               </p>
-            </article>
-
-            <article class="post-entry" data-topic="places" data-reveal>
+            </li>
+            <li class="post-entry" data-reveal>
               <p class="post-meta">Author Name <time datetime="2019-06-25">6/25/19</time></p>
-              <h3><a href="#journal">72 Hours in Algeria</a></h3>
+              <h3><a href="pages/travel.html#algeria">72 Hours in Algeria</a></h3>
               <p>
-                While I generally try to travel the slow and steady way,
-                sometimes opportunities arise that are too good to miss. When my
-                friend Kahlil invited me to spend a weekend with his family in
-                the Djebel Babor mountains, I had to make it happen.
+                A short mountain visit with a friend&rsquo;s family, taken because
+                some invitations are too good to postpone.
               </p>
-            </article>
-
-            <article class="post-entry" data-topic="places" data-reveal>
-              <p class="post-meta">Author Name <time datetime="2019-06-19">6/19/19</time></p>
-              <h3><a href="#journal">Morocco's Royal Cities</a></h3>
-              <p>
-                Morocco has four historical capitals: Fez, Marrakesh, Meknes
-                and Rabat. I spent a week in each and emerged with a clear
-                favorite.
-              </p>
-            </article>
-
-            <article class="post-entry" data-topic="places" data-reveal>
-              <p class="post-meta">Guest User <time datetime="2019-05-22">5/22/19</time></p>
-              <h3><a href="#journal">Cappadocia by Hot Air Balloon</a></h3>
-              <p>
-                I woke up to a mysterious text message from my friend Ekrem:
-                "I have got a one-of-a-kind job waiting for you in Cappadocia if
-                you can make it here by Monday."
-              </p>
-            </article>
-
-            <article class="post-entry" data-topic="guides" data-reveal>
-              <p class="post-meta">Author Name <time datetime="2019-05-14">5/14/19</time></p>
-              <h3><a href="#journal">Cheap and Delicious Eats in Istanbul</a></h3>
-              <p>
-                One of the most valuable things I have learned in my travels is
-                that the best food in any destination is never at the fancy
-                hotels. Follow the locals and you will eat well and cheaply.
-              </p>
-            </article>
-
-            <article class="post-entry" data-topic="life" data-reveal>
-              <p class="post-meta">Author Name <time datetime="2019-05-08">5/8/19</time></p>
-              <h3><a href="#journal">On Loneliness</a></h3>
-              <p>
-                Does it ever get lonely out on the road? Yes. But if you can
-                learn to embrace loneliness, it can be a great teacher.
-              </p>
-            </article>
-
-            <article class="post-entry" data-topic="places" data-reveal>
-              <p class="post-meta">Author Name <time datetime="2019-05-01">5/1/19</time></p>
-              <h3><a href="#journal">A May Day Celebration in Greece</a></h3>
-              <p>
-                May Day may be a non-existent holiday in my native US, but the
-                tradition is very much alive in Europe.
-              </p>
-            </article>
-
-            <article class="post-entry" data-topic="life" data-reveal>
-              <p class="post-meta">Guest User <time datetime="2019-04-23">4/23/19</time></p>
-              <h3><a href="#journal">Back to America</a></h3>
-              <p>
-                I am sitting in Bangkok's airport, about to board a plane to my
-                wildest destination yet: my sister's wedding back home in Santa
-                Cruz. What will I find in America after two years of constant
-                travel?
-              </p>
-            </article>
-
-            <article class="post-entry" data-topic="guides" data-reveal>
-              <p class="post-meta">Author Name <time datetime="2019-04-01">4/1/19</time></p>
-              <h3><a href="#journal">Scam City</a></h3>
-              <p>
-                Let us celebrate April Fools' Day with a list of every scam I
-                encountered in three weeks in Bangkok, shall we?
-              </p>
-            </article>
-
-            <article class="post-entry" data-topic="life" data-reveal>
-              <p class="post-meta">Author Name <time datetime="2019-03-06">3/6/19</time></p>
-              <h3><a href="#journal">Only the Essentials</a></h3>
-              <p>
-                The last six years of travel have been a story of reduction.
-                Today, I see the world with only five essential items.
-              </p>
-            </article>
-
-            <article class="post-entry" data-topic="places" data-reveal>
-              <p class="post-meta">Author Name <time datetime="2019-02-27">2/27/19</time></p>
-              <h3><a href="#journal">Learning to Play the Saung</a></h3>
-              <p>
-                The saung is Myanmar's most iconic musical instrument, a
-                boat-shaped harp that sounds like nothing else.
-              </p>
-            </article>
-
-            <article class="post-entry" data-topic="life" data-reveal>
-              <p class="post-meta">Author Name <time datetime="2019-02-14">2/14/19</time></p>
-              <h3><a href="#journal">Relationships and the Road</a></h3>
-              <p>
-                You cannot have a typical relationship while you travel the
-                world, but that does not mean romance is always out of reach.
-              </p>
-            </article>
-
-            <article class="post-entry" data-topic="life" data-reveal>
-              <p class="post-meta">Author Name <time datetime="2019-01-15">1/15/19</time></p>
-              <h3><a href="#journal">People Are Good</a></h3>
-              <p>
-                One of the biggest adjustments for me when I first started
-                traveling was losing my innate suspicion of other people.
-              </p>
-            </article>
-
-            <article class="post-entry" data-topic="guides" data-reveal>
-              <p class="post-meta">Author Name <time datetime="2019-01-05">1/5/19</time></p>
-              <h3><a href="#journal">Bring vs. Buy</a></h3>
-              <p>
-                A common mistake travelers make is packing things that can be
-                easily and cheaply purchased once they arrive at their
-                destination.
-              </p>
-            </article>
-
-            <article class="post-entry" data-topic="places" data-reveal>
-              <p class="post-meta">Author Name <time datetime="2019-01-01">1/1/19</time></p>
-              <h3><a href="#journal">Happy New Year from Bhutan</a></h3>
-              <p>
-                I went to Bhutan to see if its reputation for being the happiest
-                country on earth was accurate. Spoiler alert: It is that and so
-                much more.
-              </p>
-            </article>
-          </div>
-
-          <p class="empty-state" id="emptyState" hidden>
-            No posts match that search yet.
-          </p>
+            </li>
+          </ol>
         </section>
 
-        <section class="about" id="about" aria-labelledby="about-title" data-reveal>
+        <section class="archive-preview" id="food" aria-labelledby="food-title">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="kicker">Food</p>
+              <h2 id="food-title">Latest food notes</h2>
+            </div>
+            <a class="quiet-link" href="pages/food.html">View all food posts</a>
+          </div>
+
+          <ol class="post-list compact-list">
+            <li class="post-entry" data-reveal>
+              <p class="post-meta">Author Name <time datetime="2019-05-14">5/14/19</time></p>
+              <h3><a href="pages/food.html#istanbul-eats">Cheap and Delicious Eats in Istanbul</a></h3>
+              <p>
+                The best food is rarely inside the fanciest hotels. Follow the
+                locals and the meals become better and kinder to your budget.
+              </p>
+            </li>
+            <li class="post-entry" data-reveal>
+              <p class="post-meta">Author Name <time datetime="2019-04-12">4/12/19</time></p>
+              <h3><a href="pages/food.html#marrakesh-breakfast">Breakfast in Marrakesh</a></h3>
+              <p>
+                Mint tea, warm msemen, olives, and the patient rhythm of a
+                morning market before the heat arrives.
+              </p>
+            </li>
+            <li class="post-entry" data-reveal>
+              <p class="post-meta">Guest User <time datetime="2019-03-19">3/19/19</time></p>
+              <h3><a href="pages/food.html#cairo-koshary">A Bowl of Koshary in Cairo</a></h3>
+              <p>
+                Rice, lentils, pasta, onions, and sauce, eaten standing at a
+                counter while the city keeps moving outside.
+              </p>
+            </li>
+            <li class="post-entry" data-reveal>
+              <p class="post-meta">Author Name <time datetime="2019-02-03">2/3/19</time></p>
+              <h3><a href="pages/food.html#bangkok-night-market">Bangkok Night Market Notes</a></h3>
+              <p>
+                Smoke, fruit, noodles, and the small decisions that become a
+                perfect dinner after a long walking day.
+              </p>
+            </li>
+            <li class="post-entry" data-reveal>
+              <p class="post-meta">Author Name <time datetime="2019-01-18">1/18/19</time></p>
+              <h3><a href="pages/food.html#bhutan-tea">Butter Tea in Bhutan</a></h3>
+              <p>
+                Salty, warm, unfamiliar at first, and eventually inseparable
+                from cold mornings in the mountains.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="about" aria-labelledby="about-title" data-reveal>
           <p class="kicker">About</p>
-          <h2 id="about-title">A static interpretation of a quiet travel archive.</h2>
+          <h2 id="about-title">A small archive for travel and food writing.</h2>
           <p>
-            This page keeps the reference site's simple blog index, restrained
-            spacing, and neutral palette while adding small static-site
-            conveniences like search, a responsive menu, and subtle palette-aware
-            background motion.
+            This static site is intentionally restrained: narrow measure,
+            softened contrast, simple lists, and internal archive pages for
+            readers who want the complete set.
           </p>
         </section>
 
         <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title" data-reveal>
           <h2 id="newsletter-title">
-            I plan my life out a day at a time, so my posting schedule can be erratic.
+            My posting schedule can be erratic.
           </h2>
           <p>Sign up for my newsletter and you&rsquo;ll never miss a post.</p>
           <form class="newsletter-form" id="newsletterForm" novalidate>

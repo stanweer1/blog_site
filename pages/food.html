@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="The full food archive for the Cassidy Harman static journal."
+    />
+    <title>Food Archive | Cassidy Harman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" data-reveal>
+        <a class="site-title" href="../index.html" aria-label="Cassidy Harman home">Cassidy Harman</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="siteNav">
+          Menu
+        </button>
+        <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+          <a href="../index.html#travel">Travel</a>
+          <a href="../index.html#food">Food</a>
+          <a href="../index.html#newsletter">Newsletter</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-intro" aria-labelledby="archive-title" data-reveal>
+          <p class="kicker">Food archive</p>
+          <h1 id="archive-title">All food posts</h1>
+          <p>
+            Market breakfasts, bus-station snacks, street dinners, and the meals
+            that make a place easier to understand.
+          </p>
+        </section>
+
+        <section class="archive-page" aria-label="Food posts">
+          <div class="archive-tools" data-reveal>
+            <label class="search-wrap" for="postSearch">
+              <span>Search food posts</span>
+              <input id="postSearch" type="search" placeholder="Search food" autocomplete="off" />
+            </label>
+            <a class="quiet-link" href="../index.html#food">Back to latest food</a>
+          </div>
+
+          <ol class="post-list">
+            <li class="post-entry" id="istanbul-eats" data-reveal>
+              <p class="post-meta">Author Name <time datetime="2019-05-14">5/14/19</time></p>
+              <h3><a href="#istanbul-eats">Cheap and Delicious Eats in Istanbul</a></h3>
+              <p>
+                One of the most valuable things I have learned in my travels is
+                that the best food in any destination is never at the fancy
+                hotels. Follow the locals and you will eat well and cheaply.
+              </p>
+            </li>
+
+            <li class="post-entry" id="marrakesh-breakfast" data-reveal>
+              <p class="post-meta">Author Name <time datetime="2019-04-12">4/12/19</time></p>
+              <h3><a href="#marrakesh-breakfast">Breakfast in Marrakesh</a></h3>
+              <p>
+                Mint tea, warm msemen, olives, and the patient rhythm of a
+                morning market before the heat arrives.
+              </p>
+            </li>
+
+            <li class="post-entry" id="cairo-koshary" data-reveal>
+              <p class="post-meta">Guest User <time datetime="2019-03-19">3/19/19</time></p>
+              <h3><a href="#cairo-koshary">A Bowl of Koshary in Cairo</a></h3>
+              <p>
+                Rice, lentils, pasta, onions, and sauce, eaten standing at a
+                counter while the city keeps moving outside.
+              </p>
+            </li>
+
+            <li class="post-entry" id="bangkok-night-market" data-reveal>
+              <p class="post-meta">Author Name <time datetime="2019-02-03">2/3/19</time></p>
+              <h3><a href="#bangkok-night-market">Bangkok Night Market Notes</a></h3>
+              <p>
+                Smoke, fruit, noodles, and the small decisions that become a
+                perfect dinner after a long walking day.
+              </p>
+            </li>
+
+            <li class="post-entry" id="bhutan-tea" data-reveal>
+              <p class="post-meta">Author Name <time datetime="2019-01-18">1/18/19</time></p>
+              <h3><a href="#bhutan-tea">Butter Tea in Bhutan</a></h3>
+              <p>
+                Salty, warm, unfamiliar at first, and eventually inseparable
+                from cold mornings in the mountains.
+              </p>
+            </li>
+
+            <li class="post-entry" id="bamako-rice" data-reveal>
+              <p class="post-meta">Author Name <time datetime="2018-12-08">12/8/18</time></p>
+              <h3><a href="#bamako-rice">Rice and Sauce in Bamako</a></h3>
+              <p>
+                A courtyard lunch, one shared bowl, and the reminder that simple
+                food can carry the whole mood of an afternoon.
+              </p>
+            </li>
+
+            <li class="post-entry" id="algeria-flatbread" data-reveal>
+              <p class="post-meta">Author Name <time datetime="2018-11-22">11/22/18</time></p>
+              <h3><a href="#algeria-flatbread">Flatbread in the Djebel Babor</a></h3>
+              <p>
+                Bread cooked close to the fire, torn by hand, and eaten with
+                soup after the mountain air turned cold.
+              </p>
+            </li>
+
+            <li class="post-entry" id="greece-may-table" data-reveal>
+              <p class="post-meta">Guest User <time datetime="2018-10-17">10/17/18</time></p>
+              <h3><a href="#greece-may-table">A May Day Table in Greece</a></h3>
+              <p>
+                Greens, fish, bread, and wine stretched across an afternoon
+                where every plate seemed to arrive with a story.
+              </p>
+            </li>
+          </ol>
+
+          <p class="empty-state" id="emptyState" hidden>No food posts match that search yet.</p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; 2026 Cassidy Harman</p>
+        <a href="#archive-title">Back to top</a>
+      </footer>
+    </div>
+
+    <script src="../script.js" defer></script>
+  </body>
+</html>
