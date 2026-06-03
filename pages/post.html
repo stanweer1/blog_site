@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Read a Cassidy Harman travel or food journal entry."
+    />
+    <title>Journal Post | Cassidy Harman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" data-reveal>
+        <a class="site-title" href="../index.html" aria-label="Cassidy Harman home">Cassidy Harman</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="siteNav">
+          Menu
+        </button>
+        <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+          <a href="../index.html#travel">Travel</a>
+          <a href="../index.html#food">Food</a>
+          <a href="about.html">About</a>
+          <a href="../index.html#newsletter">Newsletter</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <article class="post-page" id="postPage" data-reveal>
+          <p class="kicker" id="postCategory">Journal</p>
+          <h1 id="postTitle">Loading post...</h1>
+          <p class="post-meta" id="postMeta"></p>
+          <div class="post-body" id="postBody"></div>
+          <nav class="post-actions" aria-label="Post navigation">
+            <a class="quiet-link" id="postArchiveLink" href="../index.html">Back to archive</a>
+          </nav>
+        </article>
+
+        <section class="post-missing" id="postMissing" hidden data-reveal>
+          <p class="kicker">Not found</p>
+          <h1>That post could not be found.</h1>
+          <p>
+            The link may be outdated. Return to the homepage or browse one of
+            the archives.
+          </p>
+          <div class="post-actions">
+            <a class="quiet-link" href="../index.html">Return home</a>
+            <a class="quiet-link" href="travel.html">Travel archive</a>
+            <a class="quiet-link" href="food.html">Food archive</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; 2026 Cassidy Harman</p>
+        <a href="#top">Back to top</a>
+      </footer>
+    </div>
+
+    <script src="../script.js" defer></script>
+  </body>
+</html>

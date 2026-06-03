@@ -277,6 +277,40 @@ h3 {
   color: var(--color-muted);
 }
 
+.post-page,
+.post-missing {
+  border-top: 1px solid var(--color-line);
+  padding: 38px 0 64px;
+}
+
+.post-page h1,
+.post-missing h1 {
+  max-width: 780px;
+}
+
+.post-page .post-meta {
+  margin-bottom: 34px;
+}
+
+.post-body {
+  max-width: 680px;
+  color: var(--color-text);
+  font-size: 1.02rem;
+}
+
+.post-body p {
+  margin-bottom: 1.35em;
+}
+
+.post-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-top: 1px solid var(--color-line);
+  margin-top: 34px;
+  padding-top: 22px;
+}
+
 .about {
   max-width: 660px;
   padding: 38px 0 58px;

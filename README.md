@@ -11,6 +11,7 @@ and a static newsletter form interaction.
 - `pages/travel.html` - full travel archive
 - `pages/food.html` - full food archive
 - `pages/about.html` - standalone About page
+- `pages/post.html` - shared reader page for individual blog posts
 - `pictures/` - place future site images here
 - `styles.css` and `script.js` - shared static styling and interactions
 
