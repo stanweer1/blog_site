@@ -450,15 +450,23 @@ function setupNewsletterForm() {
       return;
     }
 
-    const endpoint = form.dataset.signupEndpoint?.trim();
+    const recipientToken = form.dataset.signupRecipientToken?.trim();
 
-    if (!endpoint) {
+    if (!recipientToken) {
       event.preventDefault();
       message.textContent = "Newsletter signup is not connected yet.";
       return;
     }
 
-    form.action = endpoint;
+    try {
+      const recipient = window.atob(recipientToken).trim();
+      form.action = `https://formsubmit.co/${recipient}`;
+    } catch {
+      event.preventDefault();
+      message.textContent = "Newsletter signup is not connected yet.";
+      return;
+    }
+
     message.textContent = "Submitting...";
   });
 }

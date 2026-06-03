@@ -18,15 +18,20 @@ and a static newsletter form interaction.
 
 ## Newsletter privacy setup
 
-The email signup is intentionally not connected to a personal account by
-default. To collect subscribers while keeping the site owner's identity separate:
+The email signup is connected through FormSubmit, a no-registration static form
+relay. It forwards subscriber emails to the address configured by
+`data-signup-recipient-token` on the homepage newsletter form.
+
+To collect subscribers while keeping the site owner's identity separate:
 
 1. Create an email alias with an alias provider such as SimpleLogin, DuckDuckGo
    Email Protection, Firefox Relay, or a dedicated Proton alias.
 2. Use a no-card form relay that can forward submissions to that alias, such as
    FormSubmit.
-3. Activate the relay with the alias, then set the homepage form's
-   `data-signup-endpoint` in `index.html` to the relay URL.
+3. Base64-encode the destination alias and set it as the homepage form's
+   `data-signup-recipient-token` in `index.html`.
+4. Submit the form once on the live site and confirm the activation email sent
+   by FormSubmit.
 
 Example:
 
@@ -35,9 +40,15 @@ Example:
   class="newsletter-form"
   id="newsletterForm"
   method="post"
-  data-signup-endpoint="https://formsubmit.co/your-newsletter-alias@example.com"
+  data-signup-recipient-token="eW91ci1uZXdzbGV0dGVyLWFsaWFzQGV4YW1wbGUuY29t"
   novalidate
 >
+```
+
+Generate a token locally with:
+
+```bash
+printf '%s' 'your-newsletter-alias@example.com' | base64
 ```
 
 This keeps any personal inbox or payment details out of the repository. The RSS
