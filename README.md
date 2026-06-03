@@ -12,6 +12,7 @@ and a static newsletter form interaction.
 - `pages/food.html` - full food archive
 - `pages/about.html` - standalone About page
 - `pages/post.html` - shared reader page for individual blog posts
+- `feed.xml` - RSS feed for anonymous updates without email signup
 - `pictures/` - place future site images here
 - `styles.css` and `script.js` - shared static styling and interactions
 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Cassidy Harman</title>
+    <link>https://stanweer1.github.io/blog_site/</link>
+    <description>Quiet travel and food journal updates from Cassidy Harman.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Jun 2026 05:51:00 GMT</lastBuildDate>
+
+    <item>
+      <title>Six Ways to (Legally) Work Anywhere</title>
+      <link>https://stanweer1.github.io/blog_site/pages/post.html?post=six-ways</link>
+      <guid>https://stanweer1.github.io/blog_site/pages/post.html?post=six-ways</guid>
+      <pubDate>Wed, 24 Jul 2019 12:00:00 GMT</pubDate>
+      <description>Temporary work, paperwork, and practical ways to stay on the right side of local rules while moving often.</description>
+    </item>
+
+    <item>
+      <title>Highlights from Mali</title>
+      <link>https://stanweer1.github.io/blog_site/pages/post.html?post=mali</link>
+      <guid>https://stanweer1.github.io/blog_site/pages/post.html?post=mali</guid>
+      <pubDate>Sun, 21 Jul 2019 12:00:00 GMT</pubDate>
+      <description>A lift to Bamako, a slow arrival, and a week that made Western Africa feel even more generous than expected.</description>
+    </item>
+
+    <item>
+      <title>Desert Etiquette</title>
+      <link>https://stanweer1.github.io/blog_site/pages/post.html?post=desert-etiquette</link>
+      <guid>https://stanweer1.github.io/blog_site/pages/post.html?post=desert-etiquette</guid>
+      <pubDate>Wed, 10 Jul 2019 12:00:00 GMT</pubDate>
+      <description>The simple code that keeps desert travelers safe, starting with the rule that your water is everyone&apos;s water.</description>
+    </item>
+
+    <item>
+      <title>The Loudest City in the World</title>
+      <link>https://stanweer1.github.io/blog_site/pages/post.html?post=cairo</link>
+      <guid>https://stanweer1.github.io/blog_site/pages/post.html?post=cairo</guid>
+      <pubDate>Mon, 01 Jul 2019 12:00:00 GMT</pubDate>
+      <description>A softer way to move through Cairo when the city is full of life, music, engines, and impossible volume.</description>
+    </item>
+
+    <item>
+      <title>Cheap and Delicious Eats in Istanbul</title>
+      <link>https://stanweer1.github.io/blog_site/pages/post.html?post=istanbul-eats</link>
+      <guid>https://stanweer1.github.io/blog_site/pages/post.html?post=istanbul-eats</guid>
+      <pubDate>Tue, 14 May 2019 12:00:00 GMT</pubDate>
+      <description>The best food is rarely inside the fanciest hotels. Follow the locals and the meals become better and kinder to your budget.</description>
+    </item>
+  </channel>
+</rss>
