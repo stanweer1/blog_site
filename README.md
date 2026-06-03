@@ -1,9 +1,9 @@
 # Cassidy Harman static travel blog
 
 A standalone HTML, CSS, and JavaScript site inspired by the Cassidy Harman
-Squarespace fluid demo. It includes a responsive editorial layout, animated
-fluid background, archive search/filtering, URL-driven color palette support,
-and a static newsletter form interaction.
+Squarespace fluid demo. It keeps the design close to the original's quiet blog
+archive style with restrained typography, subtle palette-aware fluid accents,
+archive search, and a static newsletter form interaction.
 
 ## Run locally
 

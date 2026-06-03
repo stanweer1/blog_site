@@ -93,9 +93,9 @@ function setupFluidCanvas() {
   };
 
   const blobs = [
-    { x: 0.14, y: 0.2, r: 0.28, speed: 0.00018, color: "--color-accent", alpha: 0.12 },
-    { x: 0.82, y: 0.12, r: 0.24, speed: 0.00014, color: "--color-muted", alpha: 0.14 },
-    { x: 0.72, y: 0.78, r: 0.34, speed: 0.00012, color: "--color-wash", alpha: 0.42 },
+    { x: 0.18, y: 0.16, r: 0.24, speed: 0.0001, color: "--color-accent", alpha: 0.04 },
+    { x: 0.84, y: 0.24, r: 0.22, speed: 0.00008, color: "--color-muted", alpha: 0.05 },
+    { x: 0.68, y: 0.82, r: 0.3, speed: 0.00007, color: "--color-wash", alpha: 0.2 },
   ];
 
   function resizeCanvas() {
@@ -146,7 +146,7 @@ function setupFluidCanvas() {
 
 function setupMobileNavigation() {
   const toggle = document.querySelector(".menu-toggle");
-  const nav = document.querySelector("#mobileNav");
+  const nav = document.querySelector("#siteNav");
 
   if (!toggle || !nav) {
     return;
@@ -179,12 +179,10 @@ function setupMobileNavigation() {
 
 function setupPostFilters() {
   const search = document.querySelector("#postSearch");
-  const chips = [...document.querySelectorAll(".filter-chip")];
-  const posts = [...document.querySelectorAll(".post-card")];
+  const posts = [...document.querySelectorAll(".post-entry")];
   const emptyState = document.querySelector("#emptyState");
-  let activeFilter = "all";
 
-  if (!search || !chips.length || !posts.length || !emptyState) {
+  if (!search || !posts.length || !emptyState) {
     return;
   }
 
@@ -193,28 +191,17 @@ function setupPostFilters() {
     let visibleCount = 0;
 
     posts.forEach((post) => {
-      const topic = post.dataset.topic || "";
-      const matchesTopic = activeFilter === "all" || topic === activeFilter;
       const matchesSearch = post.textContent.toLowerCase().includes(searchTerm);
-      const isVisible = matchesTopic && matchesSearch;
 
-      post.classList.toggle("is-hidden", !isVisible);
+      post.classList.toggle("is-hidden", !matchesSearch);
 
-      if (isVisible) {
+      if (matchesSearch) {
         visibleCount += 1;
       }
     });
 
     emptyState.hidden = visibleCount !== 0;
   }
-
-  chips.forEach((chip) => {
-    chip.addEventListener("click", () => {
-      activeFilter = chip.dataset.filter || "all";
-      chips.forEach((item) => item.classList.toggle("is-active", item === chip));
-      filterPosts();
-    });
-  });
 
   search.addEventListener("input", filterPosts);
   filterPosts();
