@@ -454,13 +454,12 @@ function setupNewsletterForm() {
 
     if (!endpoint) {
       event.preventDefault();
-      message.textContent =
-        "Email signup is not connected yet. The RSS feed is available without any setup.";
+      message.textContent = "Newsletter signup is not connected yet.";
       return;
     }
 
     form.action = endpoint;
-    message.textContent = "Submitting through the alias-backed signup endpoint...";
+    message.textContent = "Submitting...";
   });
 }
 
